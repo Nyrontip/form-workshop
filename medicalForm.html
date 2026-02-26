@@ -1,10 +1,163 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Información médica</title>
     <link href="css/style.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <h2>Información médica del niñ@</h2>
+
+    <form>
+      <!-- Tipo de sangre -->
+      <label for="bloodType">Tipo de sangre</label>
+      <select id="bloodType" name="bloodType" required>
+        <option value="">Seleccione</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+      </select>
+
+      <br /><br />
+
+      <!-- Padecimientos -->
+      <p>Padecimientos</p>
+      <input type="checkbox" id="asthma" name="conditions" value="asthma" />
+      <label for="asthma">Asma</label>
+
+      <input
+        type="checkbox"
+        id="convulsions"
+        name="conditions"
+        value="convulsions"
+      />
+      <label for="convulsions">Convulsiones</label>
+
+      <input
+        type="checkbox"
+        id="heartDisease"
+        name="conditions"
+        value="heartDisease"
+      />
+      <label for="heartDisease">Problemas cardíacos</label>
+
+      <input
+        type="checkbox"
+        id="noneConditions"
+        name="conditions"
+        value="none"
+      />
+      <label for="noneConditions">Ninguno</label>
+
+      <br /><br />
+
+      <label for="conditionsOther">Otros padecimientos</label>
+      <br />
+      <textarea id="conditionsOther" name="conditionsOther" rows="3"></textarea>
+
+      <br /><br />
+
+      <!-- Vacunas -->
+      <p>¿Tiene vacunas al día?</p>
+      <input
+        type="radio"
+        id="vaccinesYes"
+        name="vaccinesUpToDate"
+        value="yes"
+      />
+      <label for="vaccinesYes">Sí</label>
+
+      <input type="radio" id="vaccinesNo" name="vaccinesUpToDate" value="no" />
+      <label for="vaccinesNo">No</label>
+
+      <br /><br />
+
+      <!-- Alergias -->
+      <p>Alergias</p>
+      <input type="checkbox" id="foodAllergy" name="allergies" value="food" />
+      <label for="foodAllergy">Alimentos</label>
+
+      <input
+        type="checkbox"
+        id="medicineAllergy"
+        name="allergies"
+        value="medicine"
+      />
+      <label for="medicineAllergy">Medicamentos</label>
+
+      <input
+        type="checkbox"
+        id="environmentAllergy"
+        name="allergies"
+        value="environment"
+      />
+      <label for="environmentAllergy">Ambientales</label>
+
+      <input type="checkbox" id="noAllergy" name="allergies" value="none" />
+      <label for="noAllergy">Ninguna</label>
+
+      <br /><br />
+
+      <label for="allergiesOther">Otras alergias</label>
+      <br />
+      <textarea id="allergiesOther" name="allergiesOther" rows="3"></textarea>
+
+      <br /><br />
+
+      <!-- Enfermedades actuales -->
+      <p>Enfermedades actuales</p>
+      <input type="checkbox" id="flu" name="currentDiseases" value="flu" />
+      <label for="flu">Gripe</label>
+
+      <input
+        type="checkbox"
+        id="infection"
+        name="currentDiseases"
+        value="infection"
+      />
+      <label for="infection">Infección</label>
+
+      <input
+        type="checkbox"
+        id="noneCurrent"
+        name="currentDiseases"
+        value="none"
+      />
+      <label for="noneCurrent">Ninguna</label>
+
+      <br /><br />
+
+      <label for="currentDiseasesOther">Otras enfermedades actuales</label>
+      <br />
+      <textarea
+        id="currentDiseasesOther"
+        name="currentDiseasesOther"
+        rows="3"
+      ></textarea>
+
+      <br /><br />
+
+      <!-- Medicamentos -->
+      <label for="medications">Medicamentos que toma</label>
+      <br />
+      <textarea id="medications" name="medications" rows="3"></textarea>
+
+      <br /><br />
+
+      <!-- Observaciones -->
+      <label for="observations">Observaciones</label>
+      <br />
+      <textarea id="observations" name="observations" rows="4"></textarea>
+
+      <br /><br />
+
+      <button type="submit">Enviar información</button>
+    </form>
+  </body>
 </html>
