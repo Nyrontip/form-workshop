@@ -6,5 +6,269 @@
     <title>Información familiar</title>
     <link href="css/style.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <h2>Información familiar</h2>
+    <form>
+      <fieldset>
+        <legend>Información del padre</legend>
+
+        <label for="fatherFirstName">Primer nombre</label>
+        <input id="fatherFirstName" type="text" name="fatherFirstName" />
+        <br /><br />
+
+        <label for="fatherSecondName">Segundo nombre</label>
+        <input id="fatherSecondName" type="text" name="fatherSecondName" />
+        <br /><br />
+
+        <label for="fatherLastName">Primer apellido</label>
+        <input id="fatherLastName" type="text" name="fatherLastName" />
+        <br /><br />
+
+        <label for="fatherSecondLastName">Segundo apellido</label>
+        <input
+          id="fatherSecondLastName"
+          type="text"
+          name="fatherSecondLastName"
+        />
+        <br /><br />
+
+        <label for="fatherBirthday">Fecha nacimiento</label>
+        <input id="fatherBirthday" type="date" name="fatherBirthday" />
+        <br /><br />
+
+        <label for="fatherResidenceCity">Ciudad de residencia</label>
+        <select id="fatherResidenceCity" name="fatherResidenceCity" required>
+          <option value="">Seleccione una ciudad</option>
+
+          <option value="bogota">Bogotá</option>
+          <option value="medellin">Medellín</option>
+          <option value="cali">Cali</option>
+          <option value="barranquilla">Barranquilla</option>
+          <option value="cartagena">Cartagena</option>
+
+          <option value="armenia">Armenia</option>
+          <option value="pereira">Pereira</option>
+          <option value="manizales">Manizales</option>
+
+          <option value="bucaramanga">Bucaramanga</option>
+          <option value="cucuta">Cúcuta</option>
+          <option value="ibague">Ibagué</option>
+          <option value="villavicencio">Villavicencio</option>
+          <option value="pasto">Pasto</option>
+          <option value="monteria">Montería</option>
+          <option value="otro">Otra</option>
+        </select>
+        <br /><br />
+
+        <label for="fatherPhoneNumber">Número de teléfono</label>
+        <input
+          id="fatherPhoneNumber"
+          type="tel"
+          name="fatherPhoneNumber"
+          pattern="[0-9]{10}"
+        />
+        <br /><br />
+
+        <label for="fatherOccupation">Ocupación</label>
+        <select id="fatherOccupation" name="fatherOccupation">
+          <option value="">Seleccione una ocupación</option>
+
+          <option value="developer">Desarrollador de Software</option>
+          <option value="engineer">Ingeniero</option>
+          <option value="technician">Técnico</option>
+          <option value="mechanic">Mecánico</option>
+          <option value="electrician">Electricista</option>
+
+          <option value="doctor">Médico</option>
+          <option value="nurse">Enfermero</option>
+          <option value="dentist">Odontólogo</option>
+          <option value="psychologist">Psicólogo</option>
+
+          <option value="teacher">Docente</option>
+          <option value="professor">Profesor Universitario</option>
+          <option value="administrator">Administrativo</option>
+
+          <option value="sales">Vendedor</option>
+          <option value="cashier">Cajero</option>
+          <option value="entrepreneur">Emprendedor</option>
+          <option value="business_owner">Propietario de Negocio</option>
+
+          <option value="driver">Conductor</option>
+          <option value="chef">Chef / Cocinero</option>
+          <option value="security">Seguridad</option>
+          <option value="cleaner">Servicios Generales</option>
+
+          <option value="student">Estudiante</option>
+          <option value="retired">Pensionado</option>
+          <option value="unemployed">Desempleado</option>
+          <option value="other">Otro</option>
+        </select>
+        <br /><br />
+
+        <label for="fatherJobCity">Ciudad de trabajo</label>
+        <select id="fatherJobCity" name="fatherJobCity">
+          <option value="">Seleccione una ciudad</option>
+
+          <option value="bogota">Bogotá</option>
+          <option value="medellin">Medellín</option>
+          <option value="cali">Cali</option>
+          <option value="barranquilla">Barranquilla</option>
+          <option value="cartagena">Cartagena</option>
+
+          <option value="armenia">Armenia</option>
+          <option value="pereira">Pereira</option>
+          <option value="manizales">Manizales</option>
+
+          <option value="bucaramanga">Bucaramanga</option>
+          <option value="cucuta">Cúcuta</option>
+          <option value="ibague">Ibagué</option>
+          <option value="villavicencio">Villavicencio</option>
+          <option value="pasto">Pasto</option>
+          <option value="monteria">Montería</option>
+          <option value="otro">Otra</option>
+        </select>
+        <br /><br />
+
+        <label for="fatherJobContactNumber">
+          Teléfono de contacto del trabajo
+        </label>
+        <input
+          id="fatherJobContactNumber"
+          type="tel"
+          name="fatherJobContactNumber"
+          pattern="[0-9]{7,10}"
+        />
+        <br />
+      </fieldset>
+      <br />
+      <br />
+      <fieldset>
+        <legend>Información de la madre</legend>
+
+        <label for="motherFirstName">Primer nombre</label>
+        <input id="motherFirstName" type="text" name="motherFirstName" />
+        <br /><br />
+
+        <label for="motherSecondName">Segundo nombre</label>
+        <input id="motherSecondName" type="text" name="motherSecondName" />
+        <br /><br />
+
+        <label for="motherLastName">Primer apellido</label>
+        <input id="motherLastName" type="text" name="motherLastName" />
+        <br /><br />
+
+        <label for="motherSecondLastName">Segundo apellido</label>
+        <input
+          id="motherSecondLastName"
+          type="text"
+          name="motherSecondLastName"
+        />
+        <br /><br />
+
+        <label for="motherBirthday">Fecha nacimiento</label>
+        <input id="motherBirthday" type="date" name="motherBirthday" />
+        <br /><br />
+
+        <label for="motherResidenceCity">Ciudad de residencia</label>
+        <select id="motherResidenceCity" name="motherResidenceCity" required>
+          <option value="">Seleccione una ciudad</option>
+
+          <option value="bogota">Bogotá</option>
+          <option value="medellin">Medellín</option>
+          <option value="cali">Cali</option>
+          <option value="barranquilla">Barranquilla</option>
+          <option value="cartagena">Cartagena</option>
+
+          <option value="armenia">Armenia</option>
+          <option value="pereira">Pereira</option>
+          <option value="manizales">Manizales</option>
+
+          <option value="bucaramanga">Bucaramanga</option>
+          <option value="cucuta">Cúcuta</option>
+          <option value="ibague">Ibagué</option>
+          <option value="villavicencio">Villavicencio</option>
+          <option value="pasto">Pasto</option>
+          <option value="monteria">Montería</option>
+          <option value="otro">Otra</option>
+        </select>
+        <br /><br />
+
+        <label for="motherPhoneNumber">Número de teléfono</label>
+        <input id="motherPhoneNumber" type="text" name="motherPhoneNumber" />
+        <br /><br />
+
+        <label for="motherOccupation">Ocupación</label>
+        <select id="motherOccupation" name="motherOccupation">
+          <option value="">Seleccione una ocupación</option>
+
+          <option value="developer">Desarrollador de Software</option>
+          <option value="engineer">Ingeniera</option>
+          <option value="technician">Técnica</option>
+          <option value="mechanic">Mecánica</option>
+          <option value="electrician">Electricista</option>
+
+          <option value="doctor">Médica</option>
+          <option value="nurse">Enfermera</option>
+          <option value="dentist">Odontóloga</option>
+          <option value="psychologist">Psicóloga</option>
+
+          <option value="teacher">Docente</option>
+          <option value="professor">Profesora Universitaria</option>
+          <option value="administrator">Administrativa</option>
+
+          <option value="sales">Vendedora</option>
+          <option value="cashier">Cajera</option>
+          <option value="entrepreneur">Emprendedora</option>
+          <option value="business_owner">Propietaria de Negocio</option>
+
+          <option value="driver">Conductora</option>
+          <option value="chef">Chef / Cocinera</option>
+          <option value="security">Seguridad</option>
+          <option value="cleaner">Servicios Generales</option>
+
+          <option value="student">Estudiante</option>
+          <option value="retired">Pensionada</option>
+          <option value="unemployed">Desempleada</option>
+          <option value="other">Otro</option>
+        </select>
+        <br /><br />
+
+        <label for="motherJobCity">Ciudad de trabajo</label>
+        <select id="motherJobCity" name="motherJobCity" required>
+          <option value="">Seleccione una ciudad</option>
+
+          <option value="bogota">Bogotá</option>
+          <option value="medellin">Medellín</option>
+          <option value="cali">Cali</option>
+          <option value="barranquilla">Barranquilla</option>
+          <option value="cartagena">Cartagena</option>
+
+          <option value="armenia">Armenia</option>
+          <option value="pereira">Pereira</option>
+          <option value="manizales">Manizales</option>
+
+          <option value="bucaramanga">Bucaramanga</option>
+          <option value="cucuta">Cúcuta</option>
+          <option value="ibague">Ibagué</option>
+          <option value="villavicencio">Villavicencio</option>
+          <option value="pasto">Pasto</option>
+          <option value="monteria">Montería</option>
+          <option value="otro">Otra</option>
+        </select>
+        <br /><br />
+
+        <label for="motherJobContactNumber">
+          Teléfono de contacto del trabajo
+        </label>
+        <input
+          id="motherJobContactNumber"
+          type="text"
+          name="motherJobContactNumber"
+        />
+        <br />
+      </fieldset>
+      <br />
+      <br />
+    </form>
+  </body>
 </html>
