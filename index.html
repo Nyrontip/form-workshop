@@ -1,11 +1,130 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Ficha de inscrpcion</h1>
-  </body>
+    <title>Listado de inscritos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+    <div class="container">
+
+        <h2>Listado de inscritos</h2>
+        <div style="display: flex; gap: 10px;">
+            <h3>Nueva inscripción:</h3><a href="inscriptionForm.html"><button class="btn btn-success"><i
+                        class="fa-solid fa-plus"></i></button></button></a>
+        </div>
+        <table width="100%" border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <th align="center" valign="middle">Nombre completo</th>
+                <th align="center" valign="middle">Fecha de nacimeinto</th>
+                <th align="center" valign="middle">Lugar de nacimiento</th>
+                <th align="center" valign="middle">Grado que ingresa</th>
+                <th align="center" valign="middle">Sección</th>
+                <th align="center" valign="middle">Domicilio</th>
+                <th align="center" valign="middle">Telefonos</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan Pérez García</td>
+                    <td>15/03/2012</td>
+                    <td>Bogotá, Colombia</td>
+                    <td>5º Primaria</td>
+                    <td>A</td>
+                    <td>Calle 85 #15-32, Bogotá</td>
+                    <td>300 345 6789 / 601 123 4567</td>
+                </tr>
+                <tr>
+                    <td>María López Fernández</td>
+                    <td>22/07/2011</td>
+                    <td>Medellín, Colombia</td>
+                    <td>4º Primaria</td>
+                    <td>B</td>
+                    <td>Carrera 43A #1-50, Medellín</td>
+                    <td>310 112 3345 / 604 456 7890</td>
+                </tr>
+                <tr>
+                    <td>Carlos Ruiz Martínez</td>
+                    <td>08/11/2013</td>
+                    <td>Cali, Colombia</td>
+                    <td>3º Primaria</td>
+                    <td>C</td>
+                    <td>Avenida 5N #28-14, Cali</td>
+                    <td>315 987 4321 / 602 321 6543</td>
+                </tr>
+                <tr>
+                    <td>Ana Sánchez Díaz</td>
+                    <td>30/01/2012</td>
+                    <td>Barranquilla, Colombia</td>
+                    <td>5º Primaria</td>
+                    <td>A</td>
+                    <td>Calle 72 #54-28, Barranquilla</td>
+                    <td>317 554 2210 / 605 478 1236</td>
+                </tr>
+                <tr>
+                    <td>Pablo González Romero</td>
+                    <td>14/05/2010</td>
+                    <td>Cartagena, Colombia</td>
+                    <td>4º Primaria</td>
+                    <td>B</td>
+                    <td>Carrera 2 #36-100, Cartagena</td>
+                    <td>314 223 8876 / 605 512 9801</td>
+                </tr>
+                <tr>
+                    <td>Laura Martín Herrera</td>
+                    <td>19/09/2013</td>
+                    <td>Bucaramanga, Colombia</td>
+                    <td>3º Primaria</td>
+                    <td>A</td>
+                    <td>Calle 34 #31-22, Bucaramanga</td>
+                    <td>313 445 6678 / 607 654 3210</td>
+                </tr>
+                <tr>
+                    <td>Diego Jiménez Torres</td>
+                    <td>03/12/2011</td>
+                    <td>Pereira, Colombia</td>
+                    <td>4º Primaria</td>
+                    <td>C</td>
+                    <td>Carrera 7 #19-20, Pereira</td>
+                    <td>316 778 9901 / 606 234 5678</td>
+                </tr>
+                <tr>
+                    <td>Sofía Ramírez Vega</td>
+                    <td>27/04/2012</td>
+                    <td>Santa Marta, Colombia</td>
+                    <td>5º Primaria</td>
+                    <td>B</td>
+                    <td>Calle 22 #3-45, Santa Marta</td>
+                    <td>312 889 0012 / 605 876 5432</td>
+                </tr>
+                <tr>
+                    <td>Miguel Hernández Castro</td>
+                    <td>11/08/2010</td>
+                    <td>Cúcuta, Colombia</td>
+                    <td>4º Primaria</td>
+                    <td>A</td>
+                    <td>Avenida 3 #14-56, Cúcuta</td>
+                    <td>319 112 2234 / 607 345 6789</td>
+                </tr>
+                <tr>
+                    <td>Elena Moreno Gil</td>
+                    <td>06/02/2013</td>
+                    <td>Armenia, Colombia</td>
+                    <td>3º Primaria</td>
+                    <td>C</td>
+                    <td>Carrera 19 #15-28, Armenia</td>
+                    <td>318 334 5567 / 606 876 4321</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
 </html>
