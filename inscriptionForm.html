@@ -5,23 +5,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ficha de inscripción</title>
-  <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-  <h2>Ficha de inscripción</h2>
-  <form action="">
+  <center>
+    <h2>Ficha de inscripción</h2>
+    <form action="familiarForm.html">
 
-    <label for="nombre_completo">Nombre completo:</label>
-    <input id="nombre_completo" type="text" placeholder="Ingrese el nombre completo">
-    <br>
-    <label for="edad">Edad:</label>
-    <input id="edad" type="text" placeholder="Ingrese la edad">
-    <br>
-    <label for="meses">Meses:</label>
-    <input id="meses" type="text" placeholder="Ingrese los meses">
+      <label for="full_name">Nombre completo:</label>
+      <input id="full_name" name="full_name" type="text" placeholder="Ingrese el nombre completo" required><br><br>
 
-  </form>
+      <label for="age">Edad:</label>
+      <input id="age" name="age" type="number" placeholder="Ingrese la edad" required><br><br>
+
+      <label for="months">Meses:</label>
+      <input id="months" name="months" type="number" placeholder="Ingrese los meses" required><br><br>
+
+      <label for="birth_date">Fecha de nacimiento:</label>
+      <input id="birth_date" name="birth_date" type="date" required><br><br>
+
+      <label for="birth_place">Lugar de nacimiento:</label>
+      <input id="birth_place" name="birth_place" type="text" placeholder="Ingrese el lugar de nacimiento" required><br><br>
+
+      <label for="grade">Grado al que ingresa:</label>
+      <select id="grade" name="grade" required>
+        <option value="">Seleccione el grado</option>
+        <option value="3_primaria">3º Primaria</option>
+        <option value="4_primaria">4º Primaria</option>
+        <option value="5_primaria">5º Primaria</option>
+      </select><br><br>
+
+      <label for="section">Sección:</label>
+      <select id="section" name="section" required>
+        <option value="">Seleccione la sección</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+      </select><br><br>
+
+      <label for="address">Domicilio:</label>
+      <input id="address" name="address" type="text" placeholder="Ingrese el domicilio" required><br><br>
+
+      <label for="phone">Teléfono:</label>
+      <input id="phone" name="phone" type="tel" placeholder="Ingrese el teléfono" required><br><br>
+
+      <button type="submit">Siguiente</button>
+
+    </form>
+  </center>
 </body>
 
 </html>
